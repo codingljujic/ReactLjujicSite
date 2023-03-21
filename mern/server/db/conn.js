@@ -1,5 +1,4 @@
-
-const { MongoClient } = require("mongodb");
+import { MongoClient } from 'mongodb-legacy';
 const Db = process.env.ATLAS_URI;
 const client = new MongoClient(Db, {
   useNewUrlParser: true,
